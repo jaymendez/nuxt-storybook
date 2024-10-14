@@ -3,4 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   modules: ["@nuxtjs/storybook"],
+  vite: {
+    optimizeDeps: {
+      include: ["jsdoc-type-pratt-parser"],
+    },
+  },
 });
